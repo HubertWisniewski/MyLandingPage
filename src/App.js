@@ -211,7 +211,7 @@ class App extends Component {
     <div id="Bar8"></div>
   </div>
   </div>
-  <div className='toWebsite' id='Start' onClick={(event) => this.websiteMode(event)} style={this.state.counter >= 10 ? {zIndex: 1} : {zIndex: 1}}>Start</div>
+  <div className='toWebsite' id='Start' onClick={(event) => this.websiteMode(event)} style={this.state.counter >= 10 ? {zIndex: 1} : {zIndex: -1}}>Start</div>
   <div className="counter" style={this.state.websiteMode ? {opacity: 0} : {opacity: 1} && this.state.scoreAppeared ? {zIndex: 1} : {zIndex: -1}}>Score: {this.state.counter}</div>
       <div className="menu">
       <div className="one" style={this.state.websiteMode ? {opacity: 0} : {opacity: 1}}>G00D</div>
