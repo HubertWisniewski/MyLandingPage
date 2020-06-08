@@ -198,7 +198,7 @@ class App extends Component {
   <div id='ContactSection' className='Contact'  style={this.state.sectionsOn ? {zIndex: 1001} : {zIndex: -1} && this.state.sectionsOn ? {opacity: 1} : {opacity: 0} }>You can find me<br/><br/> HERE <hr className='line'/>
   <h1 id='DescTwo' style={{ color: '#dac2a1'}}><br/><br/>Email me at: <br/><br/><p style={{color: '#f86502'}} >hubertwisniewski.frontend@gmail.com</p><br/>You can also check: <br/><br/><a href='https://github.com/HubertWisniewski' target="_blank" rel='noopener noreferrer'><img className="social"  src={github} alt='github'/></a><a href='https://linkedin.com/in/hubertwiśniewski' style={{textDecoration: 'none'}} target="_blank" rel='noopener noreferrer'> <img className='social' src={linkedin} style={{marginLeft: '1em'}} alt=''/></a> </h1>
   </div>
-  <div id='ProjectSection' className='Project' style={this.state.sectionsOn ? {zIndex: 1001} : {zIndex: -1} && this.state.sectionsOn ? {opacity: 1} : {opacity: 0} }>
+  <div id='ProjectSection' className='Project' style={this.state.sectionsOn ? {zIndex: 2} : {zIndex: -1} && this.state.sectionsOn ? {opacity: 1} : {opacity: 0} }>
     <h1 id='DescThree'>Under construction</h1>
   <div className='Loading'>
     <div id="Bar1"></div>
@@ -211,7 +211,7 @@ class App extends Component {
     <div id="Bar8"></div>
   </div>
   </div>
-  <div className='toWebsite' id='Start' onClick={(event) => this.websiteMode(event)} style={this.state.counter >= 10 ? {zIndex: 1} : {zIndex: -1}}>Start</div>
+  <div className='toWebsite' id='Start' onClick={(event) => this.websiteMode(event)} style={this.state.counter >= 10 ? {zIndex: 1} : {zIndex: 1}}>Start</div>
   <div className="counter" style={this.state.websiteMode ? {opacity: 0} : {opacity: 1} && this.state.scoreAppeared ? {zIndex: 1} : {zIndex: -1}}>Score: {this.state.counter}</div>
       <div className="menu">
       <div className="one" style={this.state.websiteMode ? {opacity: 0} : {opacity: 1}}>G00D</div>

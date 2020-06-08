@@ -542,7 +542,7 @@ body {
     height: 80vh;
     width: 54vw;
     position: absolute;
-    z-index: -1;
+    z-index: 0;
     /* background-color: cadetblue; */
     right: 0;
     align-self: flex-end;
@@ -559,7 +559,7 @@ body {
     height: 80vh;
     width: 50vw;
     position: absolute;
-    z-index: -1;
+    z-index: 0;
     /* background-color: cadetblue; */
     right: 0;
     align-self: flex-end;
@@ -589,6 +589,7 @@ body {
   
   #Desc, #DescTwo {
     font-size: 20px;
+    z-index: 100;
   }
 
   .line {
